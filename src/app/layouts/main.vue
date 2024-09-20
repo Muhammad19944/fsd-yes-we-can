@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Components
 import { TheHeader } from '@/widgets/header'
 </script>
