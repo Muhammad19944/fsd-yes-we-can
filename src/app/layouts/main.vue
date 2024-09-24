@@ -3,7 +3,9 @@
 
 <template>
 	<div class="main-layout-view">
-		main layout
+		<div class="layout-top bg-bg-4 min-h-[330px]">
+			main layout
+		</div>
 
 		<router-view />
 	</div>

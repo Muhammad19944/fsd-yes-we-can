@@ -4,6 +4,23 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '20px',
+        sm: '15px',
+        lg: '20px',
+        xl: '20px',
+        '2xl': '20px',
+      },
+      screens: {
+        sm: '600px',
+        md: '728px',
+        lg: '984px',
+        xl: '1260px',
+        '2xl': '1496px',
+      },
+    },
     extend: {
       colors: {
         'primary-1': '#5B7FFF',
