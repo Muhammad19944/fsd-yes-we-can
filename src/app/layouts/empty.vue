@@ -2,8 +2,8 @@
 </script>
 
 <template>
-	<div class="main-layout-view">
-		main layout
+	<div class="empty-layout-view">
+		empty layout
 
 		<router-view />
 	</div>

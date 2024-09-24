@@ -4,6 +4,7 @@ import { shallowRef, defineAsyncComponent, watch } from 'vue'
 import { useRoute } from 'vue-router'
 // Components
 import { ProgressSpinner } from '@/shared/ui/progress'
+import { MainLayout, AuthLayout, EmptyLayout } from './index'
 import { TheHeader } from '@/widgets/header'
 // Composable
 const route = useRoute()
@@ -17,10 +18,11 @@ watch(
 
     if(layout) {
       layoutComponent.value = defineAsyncComponent({
-        loader: () => import(`./layouts/${layout}.vue`),
-        loadingComponent: ProgressSpinner,
-        delay: 200
+        loader: () => import(`./${layout}.vue`),
+        loadingComponent: ProgressSpinner
       })
+
+      console.log(newRoute.meta, layout)
     }
   },
   {
@@ -33,7 +35,7 @@ watch(
 <template>
 	<div class="wrapper-layout-view bg-bg-3 min-h-screen">
 		<the-header />
-
-    <component :is="layoutComponent" />
+		
+		<router-view />
 	</div>
 </template>

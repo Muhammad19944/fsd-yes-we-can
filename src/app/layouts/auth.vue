@@ -1,11 +1,10 @@
 <script setup lang="ts">
-// Components
-import { TheHeader } from '@/widgets/header'
 </script>
 
 <template>
 	<div class="auth-layout-view">
-		<the-header />
 		auth layout
+
+		<router-view />
 	</div>
 </template>
