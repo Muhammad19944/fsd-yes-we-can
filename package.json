@@ -14,10 +14,13 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "postinstall": "if [ \"$NODE_ENV\" != \"production\" ]; then npm install cypress; fi"
+    "postinstall": "if [ \"$NODE_ENV\" != \"production\" ]; then npm install cypress; fi",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@primevue/themes": "^4.0.7",
     "pinia": "^2.1.7",
+    "primevue": "^4.0.7",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
@@ -37,6 +40,7 @@
     "eslint-plugin-cypress": "^3.3.0",
     "eslint-plugin-fsd-import": "^0.0.13",
     "eslint-plugin-vue": "^9.23.0",
+    "husky": "^9.1.6",
     "jsdom": "^24.1.0",
     "npm-run-all2": "^6.2.0",
     "postcss": "^8.4.47",

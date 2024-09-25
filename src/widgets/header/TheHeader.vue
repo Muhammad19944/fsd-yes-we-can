@@ -7,6 +7,7 @@ import {
 	ClockIcon,
 	ClipboardIcon
 } from '@/shared/ui/icons'
+import { NotificationDropdown } from '@/features/notifications'
 </script>
 
 <template>
@@ -58,6 +59,10 @@ import {
 						<clipboard-icon />
 						<span class="text-text-4">Events</span>
 					</router-link>
+				</div>
+
+				<div class="flex items-center justify-end">
+					<notification-dropdown />
 				</div>
 			</div>
 		</div>
