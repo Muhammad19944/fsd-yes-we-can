@@ -1,7 +1,4 @@
-<script setup lang="ts">
-let a = 222
-let b = 123
-</script>
+<script setup lang="ts"></script>
 
 <template>
 	<div class="notification-dropdown">notification-dropdown</div>
