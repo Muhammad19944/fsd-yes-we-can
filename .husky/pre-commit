@@ -1,1 +1,1 @@
-npm format
+yarn lint-staged
