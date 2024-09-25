@@ -1,1 +1,1 @@
-export { default as NotificationDropdown } from './Dropdown.vue'
+export { default as NotificationDropdown } from './NotificationDropdown.vue'
