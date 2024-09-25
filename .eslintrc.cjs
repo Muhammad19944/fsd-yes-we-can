@@ -10,6 +10,10 @@ module.exports = {
     '@vue/eslint-config-prettier/skip-formatting',
     // 'fsd-import'
   ],
+  'rules': {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
   // rules: {
   //   'fsd-import/fsd-relative-path': 'error',
   //   'fsd-import/public-api-imports': 'error',
