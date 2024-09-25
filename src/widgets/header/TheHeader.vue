@@ -7,8 +7,8 @@
 		<div class="container">
 			<div class="flex items-center h-[100px] py-5">
 				<router-link to="/" class="flex">
-					<img src="@/shared/ui/assets/image/logo-icon.svg" alt="logo-icon">
-					<img src="@/shared/ui/assets/image/logo-text.svg" alt="logo-text">
+					<img src="@/shared/ui/assets/image/logo-icon.svg" alt="logo-icon" />
+					<img src="@/shared/ui/assets/image/logo-text.svg" alt="logo-text" />
 				</router-link>
 
 				<div class="flex justify-end flex-1">

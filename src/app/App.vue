@@ -11,22 +11,22 @@ const route = useRoute()
 const layoutComponent = shallowRef(null)
 // Watch
 watch(
-  () => route,
-  (newRoute) => {
-    let layout = newRoute.meta?.layout
+	() => route,
+	(newRoute) => {
+		let layout = newRoute.meta?.layout
 
-    if(layout) {
-      layoutComponent.value = defineAsyncComponent({
-        loader: () => import(`./layouts/${layout}.vue`),
-        loadingComponent: ProgressSpinner,
-        delay: 200
-      })
-    }
-  },
-  {
-    immediate: true,
-    deep: true
-  }
+		if (layout) {
+			layoutComponent.value = defineAsyncComponent({
+				loader: () => import(`./layouts/${layout}.vue`),
+				loadingComponent: ProgressSpinner,
+				delay: 200
+			})
+		}
+	},
+	{
+		immediate: true,
+		deep: true
+	}
 )
 </script>
 
@@ -34,6 +34,6 @@ watch(
 	<div class="wrapper-layout-view bg-bg-3 min-h-screen">
 		<the-header />
 
-    <component :is="layoutComponent" />
+		<component :is="layoutComponent" />
 	</div>
 </template>
