@@ -1,20 +1,17 @@
 <script setup></script>
 
 <template>
-	<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path
-			d="M9.625 16.625C13.491 16.625 16.625 13.491 16.625 9.625C16.625 5.759 13.491 2.625 9.625 2.625C5.759 2.625 2.625 5.759 2.625 9.625C2.625 13.491 5.759 16.625 9.625 16.625Z"
-			stroke="#B0B7C3"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			opacity="0.3"
+			d="M14.2929 16.7071C13.9024 16.3166 13.9024 15.6834 14.2929 15.2929C14.6834 14.9024 15.3166 14.9024 15.7071 15.2929L19.7071 19.2929C20.0976 19.6834 20.0976 20.3166 19.7071 20.7071C19.3166 21.0976 18.6834 21.0976 18.2929 20.7071L14.2929 16.7071Z"
+			class="fill-text-4"
 		/>
 		<path
-			d="M18.375 18.375L14.5687 14.5687"
-			stroke="#B0B7C3"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M4 11C4 14.866 7.13401 18 11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11ZM16 11C16 13.7614 13.7614 16 11 16C8.23858 16 6 13.7614 6 11C6 8.23858 8.23858 6 11 6C13.7614 6 16 8.23858 16 11Z"
+			class="fill-text-4"
 		/>
 	</svg>
 </template>

@@ -21,6 +21,12 @@ export default {
         '2xl': '1496px',
       },
     },
+    fontFamily: {
+      'regular': 'SF Pro Display Regular',
+      'medium': 'SF Pro Display Medium',
+      'semiBold': 'SF Pro Display SemiBold',
+      'bold': 'SF Pro Display Bold'
+    },
     extend: {
       colors: {
         'primary-1': '#5B7FFF',

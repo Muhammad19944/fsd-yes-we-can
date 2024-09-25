@@ -1,5 +1,5 @@
 export { default as ClipboardIcon } from './Clipboard.vue'
 export { default as ClockIcon } from './Clock.vue'
-export { default as LayoutBlocksIcon } from './LayoutBlocks.vue'
+export { default as Layout4BlocksIcon } from './Layout4Blocks.vue'
 export { default as SearchIcon } from './Search.vue'
 export { default as TimeScheduleIcon } from './TimeSchedule.vue'

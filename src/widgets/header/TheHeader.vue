@@ -1,5 +1,12 @@
 <script setup lang="ts">
-// Macros
+// Components
+import {
+	Layout4BlocksIcon,
+	SearchIcon,
+	TimeScheduleIcon,
+	ClockIcon,
+	ClipboardIcon
+} from '@/shared/ui/icons'
 </script>
 
 <template>
@@ -7,15 +14,50 @@
 		<div class="container">
 			<div class="flex items-center h-[100px] py-5">
 				<router-link to="/" class="flex">
-					<img src="@/shared/ui/assets/image/logo-icon.svg" alt="logo-icon" />
-					<img src="@/shared/ui/assets/image/logo-text.svg" alt="logo-text" />
+					<img src="/image/logo-icon.svg" alt="logo-icon" />
+					<img src="/image/logo-text.svg" alt="logo-text" />
 				</router-link>
 
-				<div class="flex justify-end flex-1">
-					<router-link :to="{ name: 'DashboardPage' }">Dashboard</router-link>
-					<router-link :to="{ name: 'JobsPage' }">Jobs search</router-link>
-					<router-link :to="{ name: 'SchedulePage' }">Schedule</router-link>
-					<router-link :to="{ name: 'AuthLoginPage' }">Auth login</router-link>
+				<div class="flex justify-end flex-1 space-x-3">
+					<router-link
+						:to="{ name: 'DashboardPage' }"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+					>
+						<layout4-blocks-icon />
+						<span class="text-text-4">Dashboard</span>
+					</router-link>
+
+					<router-link
+						:to="{ name: 'JobsPage' }"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+					>
+						<search-icon />
+						<span class="text-text-4">Jobs search</span>
+					</router-link>
+
+					<router-link
+						:to="{ name: 'SchedulePage' }"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+					>
+						<time-schedule-icon />
+						<span class="text-text-4">Schedule</span>
+					</router-link>
+
+					<router-link
+						:to="{ name: 'HistoryPage' }"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+					>
+						<clock-icon />
+						<span class="text-text-4">History</span>
+					</router-link>
+
+					<router-link
+						:to="{ name: 'EventsPage' }"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+					>
+						<clipboard-icon />
+						<span class="text-text-4">Events</span>
+					</router-link>
 				</div>
 			</div>
 		</div>
