@@ -2,13 +2,7 @@
 // Core
 import OverlayBadge from 'primevue/overlaybadge'
 // Types
-import type { SizeType, VariantType } from '@/shared/types'
-// Interface
-interface IBadge {
-	modelValue?: string | number
-	size?: SizeType
-	severity?: VariantType
-}
+import type { IBadge } from './types'
 // Macros
 withDefaults(defineProps<IBadge>(), {
 	modelValue: '',

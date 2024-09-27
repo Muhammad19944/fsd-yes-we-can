@@ -8,6 +8,7 @@ import {
 	ClipboardIcon
 } from '@/shared/ui/icons'
 import { NotificationDropdown } from '@/features/notifications'
+import { UserDropdown } from '@/features/user-dropdown'
 </script>
 
 <template>
@@ -61,8 +62,10 @@ import { NotificationDropdown } from '@/features/notifications'
 					</router-link>
 				</div>
 
-				<div class="flex items-center justify-end min-w-[200px]">
+				<div class="flex items-center justify-end gap-9 min-w-[250px]">
 					<notification-dropdown />
+
+					<user-dropdown />
 				</div>
 			</div>
 		</div>
