@@ -1,13 +1,12 @@
 <script setup lang="ts">
-// Core
-import Badge from 'primevue/badge'
 // Components
 import { NotificationIcon } from '@/shared/ui/icons'
+import { BadgeOverlay } from '@/shared/ui/badge'
 </script>
 
 <template>
 	<div class="notification-dropdown">
+		<badge-overlay severity="danger" />
 		<notification-icon />
-		<badge severity="danger" size="small" />
 	</div>
 </template>
