@@ -10,6 +10,7 @@ import { BaseAvatar, AvatarGroup } from '@/shared/ui/avatar'
 			root-class="!w-10 !h-10"
 		/>
 
+		<!-- TODO: Потом удалить -->
 		<template v-if="false">
 			<avatar-group image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" />
 		</template>
