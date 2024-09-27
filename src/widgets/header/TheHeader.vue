@@ -61,7 +61,7 @@ import { NotificationDropdown } from '@/features/notifications'
 					</router-link>
 				</div>
 
-				<div class="flex items-center justify-end">
+				<div class="flex items-center justify-end min-w-[200px]">
 					<notification-dropdown />
 				</div>
 			</div>
