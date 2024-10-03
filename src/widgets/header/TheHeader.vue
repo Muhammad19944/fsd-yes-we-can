@@ -12,7 +12,7 @@ import { UserDropdown } from '@/features/user-dropdown'
 </script>
 
 <template>
-	<header class="widget-header bg-bg-4 fixed top-0 left-0 w-full">
+	<header class="widget-header bg-bg-4 fixed top-0 left-0 w-full z-10">
 		<div class="container">
 			<div class="flex items-center h-[100px] py-5">
 				<router-link to="/" class="flex">

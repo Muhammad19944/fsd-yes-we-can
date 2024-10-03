@@ -5,7 +5,7 @@ export const route: RouteRecordRaw = {
 	path: '/login',
 	name: 'AuthLoginPage',
 	meta: {
-		layout: 'auth'
+		layout: 'AuthLayout'
 	} as MetaTypes,
 	component: () => import('@/pages/auth')
 }

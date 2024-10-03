@@ -5,7 +5,7 @@ export const route: RouteRecordRaw = {
 	path: '/dashboard',
 	name: 'DashboardPage',
 	meta: {
-		layout: 'empty'
+		layout: 'EmptyLayout'
 	} as MetaTypes,
 	component: () => import('@/pages/dashboard')
 }

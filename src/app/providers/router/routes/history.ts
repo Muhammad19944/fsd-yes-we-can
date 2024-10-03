@@ -5,7 +5,7 @@ export const route: RouteRecordRaw = {
 	path: '/history',
 	name: 'HistoryPage',
 	meta: {
-		layout: 'main'
+		layout: 'MainLayout'
 	} as MetaTypes,
 	component: () => import('@/pages/history')
 }

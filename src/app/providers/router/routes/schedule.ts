@@ -5,7 +5,7 @@ export const route: RouteRecordRaw = {
 	path: '/schedule',
 	name: 'SchedulePage',
 	meta: {
-		layout: 'main'
+		layout: 'MainLayout'
 	} as MetaTypes,
 	component: () => import('@/pages/schedule')
 }
