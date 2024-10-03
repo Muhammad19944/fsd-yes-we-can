@@ -23,7 +23,7 @@ import { UserDropdown } from '@/features/user-dropdown'
 				<div class="flex justify-end flex-1 space-x-3">
 					<router-link
 						:to="{ name: 'DashboardPage' }"
-						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-5"
 					>
 						<layout4-blocks-icon />
 						<span class="text-text-4">Dashboard</span>
@@ -31,7 +31,7 @@ import { UserDropdown } from '@/features/user-dropdown'
 
 					<router-link
 						:to="{ name: 'JobsPage' }"
-						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-5"
 					>
 						<search-icon />
 						<span class="text-text-4">Jobs search</span>
@@ -39,7 +39,7 @@ import { UserDropdown } from '@/features/user-dropdown'
 
 					<router-link
 						:to="{ name: 'SchedulePage' }"
-						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-5"
 					>
 						<time-schedule-icon />
 						<span class="text-text-4">Schedule</span>
@@ -47,7 +47,7 @@ import { UserDropdown } from '@/features/user-dropdown'
 
 					<router-link
 						:to="{ name: 'HistoryPage' }"
-						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-5"
 					>
 						<clock-icon />
 						<span class="text-text-4">History</span>
@@ -55,7 +55,7 @@ import { UserDropdown } from '@/features/user-dropdown'
 
 					<router-link
 						:to="{ name: 'EventsPage' }"
-						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-3"
+						class="flex items-center justify-center gap-[5px] min-h-[46px] hover:bg-bg-3 transition-colors rounded-[15px] px-5"
 					>
 						<clipboard-icon />
 						<span class="text-text-4">Events</span>
@@ -71,3 +71,9 @@ import { UserDropdown } from '@/features/user-dropdown'
 		</div>
 	</header>
 </template>
+
+<style scoped>
+.router-link-active {
+	@apply bg-bg-3;
+}
+</style>

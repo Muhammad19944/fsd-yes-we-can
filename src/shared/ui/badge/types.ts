@@ -1,8 +1,8 @@
 // Types
-import type { SizeType, VariantType } from '@/shared/types'
+import type { SizeType, SeverityType } from '@/shared/types'
 
 export interface IBadge {
 	modelValue?: string | number
 	size?: Exclude<SizeType, 'normal'>
-	severity?: VariantType
+	severity?: SeverityType
 }

@@ -1,6 +1,7 @@
 export { default as ClipboardIcon } from './ClipboardIcon.vue'
 export { default as ClockIcon } from './Clock.vue'
 export { default as Layout4BlocksIcon } from './Layout4Blocks.vue'
+export { default as MarkerIcon } from './MarkerIcon.vue'
 export { default as NotificationIcon } from './NotificationIcon.vue'
 export { default as SearchIcon } from './Search.vue'
 export { default as TimeScheduleIcon } from './TimeSchedule.vue'
