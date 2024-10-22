@@ -4,6 +4,19 @@ import Aura from '@primevue/themes/aura'
 export { default as PrimeVue } from 'primevue/config'
 export const CustomAuraPreset = definePreset(Aura, {
 	primitive: {
+		blue: {
+			50: '#e3f2ff',
+			100: '#b3daff',
+			200: '#80c1ff',
+			300: '#4da7ff',
+			400: '#377dff',
+			500: '#0056e0',
+			600: '#0046c2',
+			700: '#0035a3',
+			800: '#002584',
+			900: '#001466',
+			950: '#000947'
+		},
 		green: {
 			50: '#edfcf4',
 			100: '#d3f8e2',
@@ -42,19 +55,6 @@ export const CustomAuraPreset = definePreset(Aura, {
 			800: '#9a3412',
 			900: '#7c2d12',
 			950: '#431407'
-		},
-		blue: {
-			50: '#e3f2ff',
-			100: '#b3daff',
-			200: '#80c1ff',
-			300: '#4da7ff',
-			400: '#377dff',
-			500: '#0056e0',
-			600: '#0046c2',
-			700: '#0035a3',
-			800: '#002584',
-			900: '#001466',
-			950: '#000947'
 		}
 	},
 	semantic: {
@@ -70,6 +70,22 @@ export const CustomAuraPreset = definePreset(Aura, {
 			800: '{blue.800}',
 			900: '{blue.900}',
 			950: '{blue.950}'
+		}
+	},
+	components: {
+		chip: {
+			colorScheme: {
+				light: {},
+				dark: {
+					border: {
+						radius: '15px'
+					},
+					padding: {
+						x: '16px',
+						y: '8px'
+					}
+				}
+			}
 		}
 	}
 })

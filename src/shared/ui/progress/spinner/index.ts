@@ -1,2 +1,2 @@
-import Spinner from './Spinner.vue'
-export default Spinner
+import ProgressSpinner from './ProgressSpinner.vue'
+export default ProgressSpinner
