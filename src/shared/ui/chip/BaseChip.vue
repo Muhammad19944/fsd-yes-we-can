@@ -42,7 +42,7 @@ const colors = computed(() => {
 				class: [colors]
 			},
 			label: {
-				class: 'leading-[1]'
+				class: 'text-sm leading-[1]'
 			}
 		}"
 	/>

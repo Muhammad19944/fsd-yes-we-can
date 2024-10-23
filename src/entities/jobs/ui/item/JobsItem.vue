@@ -10,7 +10,7 @@ const jobsInfo = [{ title: 'Apple Inc' }, { title: 'California, USA' }, { title:
 
 <template>
 	<div
-		class="jobs-item flex items-center gap-6 transition-colors hover:bg-bg-3 rounded-[15px] px-5 py-6"
+		class="jobs-item flex items-center gap-6 transition-colors hover:bg-blue-400/15 rounded-[15px] px-5 py-6"
 	>
 		<slot name="favorite" />
 
