@@ -6,6 +6,6 @@ import { MarkerIcon } from '@/shared/ui/icons'
 
 <template>
 	<div class="jobs-location max-w-[285px] w-full">
-		<base-select :options="[]" placeholder="Select Location" :icon="MarkerIcon" />
+		<base-select :options="[]" placeholder="Select Location" transparent :icon="MarkerIcon" />
 	</div>
 </template>

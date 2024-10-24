@@ -20,6 +20,7 @@ export interface ISelect {
 	invalid?: boolean
 	disabled?: boolean
 	variant?: VariantType
+	showClear?: boolean
 	fluid?: boolean
 	transparent?: boolean
 	icon?: Component

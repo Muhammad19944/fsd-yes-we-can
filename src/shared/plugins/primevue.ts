@@ -55,6 +55,18 @@ export const CustomAuraPreset = definePreset(Aura, {
 			800: '#9a3412',
 			900: '#7c2d12',
 			950: '#431407'
+		},
+		overlay: {
+			100: '#2F3746',
+			200: '#C1C7D0',
+			300: '#232A37',
+			400: '#161C27'
+		},
+		text: {
+			100: '#323B4B',
+			200: '#EEF1F5',
+			300: '#8A94A6',
+			400: '#B0B7C3'
 		}
 	},
 	semantic: {
@@ -83,6 +95,40 @@ export const CustomAuraPreset = definePreset(Aura, {
 					padding: {
 						x: '16px',
 						y: '8px'
+					}
+				}
+			}
+		},
+		select: {
+			colorScheme: {
+				light: {},
+				dark: {
+					background: '{overlay.100}',
+					border: {
+						color: 'transparent',
+						radius: '15px'
+					},
+					hover: {
+						border: {
+							color: 'transparent'
+						}
+					},
+					placeholder: {
+						color: '{text.400}'
+					},
+					padding: {
+						x: '10px 16px',
+						y: '10px 0'
+					},
+					overlay: {
+						background: '{overlay.100}'
+					},
+					option: {
+						padding: '6px 10px',
+						color: '{text.400}',
+						focus: {
+							background: '{overlay.300}'
+						}
 					}
 				}
 			}
