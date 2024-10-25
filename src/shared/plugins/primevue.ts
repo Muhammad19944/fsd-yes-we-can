@@ -85,6 +85,37 @@ export const CustomAuraPreset = definePreset(Aura, {
 		}
 	},
 	components: {
+		accordion: {
+			colorScheme: {
+				light: {},
+				dark: {
+					panel: {
+						border: {
+							color: 'transparent'
+						}
+					},
+					header: {
+						color: '{text.200}',
+						background: 'transparent',
+						hover: {
+							background: 'transparent'
+						},
+						active: {
+							color: '{text.200}',
+							background: 'transparent',
+							hover: {
+								background: 'transparent'
+							}
+						},
+						padding: 0
+					},
+					content: {
+						background: 'transparent',
+						padding: '20px 0 0 0'
+					}
+				}
+			}
+		},
 		chip: {
 			colorScheme: {
 				light: {},
