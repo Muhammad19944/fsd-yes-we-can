@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<IChip>(), {
 const colors = computed(() => {
 	switch (props.color) {
 		case 'contrast':
-			return ''
+			return '!bg-overlay-100 !text-text-400'
 		case 'danger':
 			return '!bg-red-400/30 !text-red-400'
 		case 'info':

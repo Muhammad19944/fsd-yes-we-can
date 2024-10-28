@@ -1,2 +1,6 @@
 export { default as JobsFilter } from './JobsFilter.vue'
+export { default as LanguagesOptions } from './LanguagesOptions.vue'
+export { default as LocationOptions } from './LocationOptions.vue'
+export { default as SalaryRange } from './SalaryRange.vue'
 export { default as TypeEmployment } from './TypeEmployment.vue'
+export { default as TypeLevel } from './TypeLevel.vue'

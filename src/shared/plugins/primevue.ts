@@ -194,6 +194,29 @@ export const CustomAuraPreset = definePreset(Aura, {
 					}
 				}
 			}
+		},
+		slider: {
+			border: {
+				radius: '40px'
+			},
+			track: {
+				size: '5px',
+				background: '{overlay.100}'
+			},
+			handle: {
+				width: '23px',
+				height: '23px',
+				background: '{overlay.100}',
+				content: {
+					width: '15px',
+					height: '15px'
+				},
+				focus: {
+					ring: {
+						width: 0
+					}
+				}
+			}
 		}
 	}
 })
