@@ -124,8 +124,39 @@ export const CustomAuraPreset = definePreset(Aura, {
 						radius: '15px'
 					},
 					padding: {
-						x: '16px',
-						y: '8px'
+						x: '14px',
+						y: '6px'
+					}
+				}
+			}
+		},
+		checkbox: {
+			border: {
+				radius: '8px',
+				color: 'transparent'
+			},
+			width: '28px',
+			height: '28px',
+			background: '{overlay.100}',
+			hover: {
+				border: {
+					color: 'transparent'
+				}
+			},
+			checked: {
+				background: '{blue.400}',
+				hover: {
+					background: '{blue.400}',
+					border: {
+						color: 'transparent'
+					}
+				}
+			},
+			icon: {
+				checked: {
+					color: 'white',
+					hover: {
+						color: 'white'
 					}
 				}
 			}
