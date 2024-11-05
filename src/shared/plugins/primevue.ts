@@ -130,6 +130,33 @@ export const CustomAuraPreset = definePreset(Aura, {
 				}
 			}
 		},
+		inputtext: {
+			background: '{overlay.300}',
+			border: {
+				color: '{overlay.100}',
+				radius: '15px'
+			},
+			hover: {
+				border: {
+					color: '{overlay.100}'
+				}
+			}
+			// focus: {
+			// 	border: {
+			// 		color: 'transparent'
+			// 	}
+			// }
+		},
+		password: {
+			overlay: {
+				background: '{overlay.300}',
+				padding: '12px 16px',
+				border: {
+					color: '{overlay.300}',
+					radius: '15px'
+				}
+			}
+		},
 		checkbox: {
 			border: {
 				radius: '8px',

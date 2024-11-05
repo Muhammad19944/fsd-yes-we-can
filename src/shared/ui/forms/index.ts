@@ -1,4 +1,5 @@
 export * from './checkbox'
 export * from './input'
+export * from './password'
 export * from './select'
 export * from './slider'

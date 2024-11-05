@@ -4,7 +4,7 @@ import { shallowRef, defineAsyncComponent, watch } from 'vue'
 import { useRoute } from 'vue-router'
 // Components
 import { ProgressSpinner } from '@/shared/ui/progress'
-import { TheHeader } from '@/widgets/header'
+
 // Composable
 const route = useRoute()
 // Reactive
@@ -31,9 +31,7 @@ watch(
 </script>
 
 <template>
-	<div class="wrapper-layout-view bg-bg-3 min-h-screen">
-		<the-header />
-
+	<div class="wrapper-layout-view min-h-screen">
 		<component :is="layoutComponent" />
 	</div>
 </template>

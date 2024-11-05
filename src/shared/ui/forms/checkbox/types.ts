@@ -12,5 +12,7 @@ export interface ICheckbox {
 	variant?: VariantType
 	readonly?: boolean
 	tabindex?: number
+	inputId?: string
 	required?: boolean
+	label?: string
 }

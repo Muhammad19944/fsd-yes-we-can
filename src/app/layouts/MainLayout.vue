@@ -1,10 +1,13 @@
 <script setup lang="ts">
 // Components
 import { JobsToolbar } from '@/features/jobs/toolbar'
+import { TheHeader } from '@/widgets/header'
 </script>
 
 <template>
-	<div class="main-layout-view pb-20">
+	<div class="main-layout-view bg-bg-3 pb-20">
+		<the-header />
+
 		<div class="layout-top bg-bg-4 min-h-[330px] mb-[100px]">
 			<div class="container">
 				<div class="flex flex-col justify-center relative min-h-[330px] pt-12">

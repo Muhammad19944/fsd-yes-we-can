@@ -1,9 +1,7 @@
 <script setup lang="ts">
 // Core
-import { computed } from 'vue'
+import { computed, useSlots } from 'vue'
 import InputText from 'primevue/inputtext'
-// Components
-import { SearchIcon } from '@/shared/ui/icons'
 // Types
 import type { IFormInput } from './types'
 // Macros
@@ -11,27 +9,28 @@ const props = withDefaults(defineProps<IFormInput>(), {
 	variant: 'outlined',
 	invalid: false,
 	transparent: true,
-	icon: SearchIcon,
 	trailing: false
 })
+// Composable
+const slots = useSlots()
 // Computed
-const rootClass = computed(() => {
+const inputClass = computed(() => {
 	return [
 		{
-			'!bg-transparent !border-none': props.transparent
+			'!bg-transparent !border-none': props.transparent,
+			'!pl-11': !!slots['icon-left']
 		},
-		'flex-1 placeholder:!text-text-4 placeholder:translate-x-1'
+		'flex-1 placeholder:!text-text-4 placeholder:translate-x-1 !text-sm !py-[14px]'
 	]
-})
-const iconClass = computed(() => {
-	return ['w-6 h-6', props.iconClass]
 })
 </script>
 
 <template>
-	<div class="forms-input flex items-center">
-		<template v-if="!props.trailing">
-			<component :is="props.icon" :class="iconClass" />
+	<div class="forms-input flex items-center relative">
+		<template v-if="slots['icon-left']">
+			<div class="absolute left-4">
+				<slot name="icon-left" />
+			</div>
 		</template>
 
 		<input-text
@@ -44,13 +43,15 @@ const iconClass = computed(() => {
 			:placeholder="placeholder"
 			:pt="{
 				root: {
-					class: rootClass
+					class: inputClass
 				}
 			}"
 		/>
 
-		<template v-if="props.trailing">
-			<component :is="props.icon" :class="iconClass" />
+		<template v-if="slots['icon-right']">
+			<div>
+				<slot name="icon-right" />
+			</div>
 		</template>
 	</div>
 </template>
