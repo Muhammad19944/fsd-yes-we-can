@@ -4,20 +4,20 @@ import type { Ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { defineStore } from 'pinia'
 // Types
-import type { ISignUp, ISignIn } from './types'
+import type { SignUpWithPasswordCredentials, SignInWithPasswordCredentials } from '@/shared/api'
 // API
 import { signUp, signIn } from '@/shared/api'
 
 interface IAuthStore {
-	signUpModel: Ref<ISignUp>
+	signUpModel: Ref<SignUpWithPasswordCredentials>
 	actionSignUp: () => Promise<void>
-	signInModel: Ref<ISignIn>
+	signInModel: Ref<SignInWithPasswordCredentials>
 	actionSingIn: () => Promise<void>
 }
 
 export const useAuthStore = defineStore('auth', (): IAuthStore => {
 	// Reactive
-	const signUpModel = ref<ISignUp>({
+	const signUpModel = ref<SignUpWithPasswordCredentials>({
 		email: '',
 		password: '',
 		options: {
@@ -26,7 +26,7 @@ export const useAuthStore = defineStore('auth', (): IAuthStore => {
 			}
 		}
 	})
-	const signInModel = ref<ISignIn>({
+	const signInModel = ref<SignInWithPasswordCredentials>({
 		email: '',
 		password: ''
 	})
