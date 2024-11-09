@@ -4,7 +4,7 @@ import { ApolloClients } from '@vue/apollo-composable'
 import { apolloClient } from '@/shared/api/gql'
 import App from './App.vue'
 import './styles/index.css'
-import { PrimeVue, CustomAuraPreset } from '@/shared/plugins'
+import { PrimeVue, CustomAuraPreset, ToastService } from '@/shared/plugins'
 
 export const application = createApp({
 	setup() {
@@ -17,6 +17,7 @@ export const application = createApp({
 })
 	.use(router)
 	.use(store)
+	.use(ToastService)
 	.use(PrimeVue, {
 		theme: {
 			preset: CustomAuraPreset

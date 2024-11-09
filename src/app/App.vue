@@ -2,9 +2,9 @@
 // Core
 import { shallowRef, defineAsyncComponent, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import Toast from 'primevue/toast'
 // Components
 import { ProgressSpinner } from '@/shared/ui/progress'
-
 // Composable
 const route = useRoute()
 // Reactive
@@ -33,5 +33,7 @@ watch(
 <template>
 	<div class="wrapper-layout-view min-h-screen">
 		<component :is="layoutComponent" />
+
+		<Toast />
 	</div>
 </template>

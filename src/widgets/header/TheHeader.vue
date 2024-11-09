@@ -9,6 +9,10 @@ import {
 } from '@/shared/ui/icons'
 import { NotificationDropdown } from '@/features/notifications'
 import { UserDropdown } from '@/features/user-dropdown'
+// Stores
+import { useUserStore } from '@/entities/user'
+// Composable
+const userStore = useUserStore()
 </script>
 
 <template>
@@ -62,11 +66,13 @@ import { UserDropdown } from '@/features/user-dropdown'
 					</router-link>
 				</div>
 
-				<div class="flex items-center justify-end gap-9 min-w-[250px]">
-					<notification-dropdown />
+				<template v-if="userStore.isUserSignIn">
+					<div class="flex items-center justify-end gap-9 min-w-[250px]">
+						<notification-dropdown />
 
-					<user-dropdown />
-				</div>
+						<user-dropdown />
+					</div>
+				</template>
 			</div>
 		</div>
 	</header>

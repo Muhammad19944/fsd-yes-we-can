@@ -18,6 +18,7 @@ export interface IFormPassword {
 	unmaskIcon?: string
 	size?: Exclude<SizeType, 'normal' | 'xlarge'>
 	invalid?: boolean
+	errors?: string[]
 	disabled?: boolean
 	variant?: VariantType
 	placeholder?: string

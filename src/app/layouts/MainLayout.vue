@@ -1,7 +1,16 @@
 <script setup lang="ts">
+// Core
+import { onBeforeMount } from 'vue'
 // Components
 import { JobsToolbar } from '@/features/jobs/toolbar'
 import { TheHeader } from '@/widgets/header'
+import { useUserStore } from '@/entities/user'
+// Stores
+const userStore = useUserStore()
+// Hooks
+onBeforeMount(async () => {
+	await userStore.actionCurrentUser()
+})
 </script>
 
 <template>

@@ -2,6 +2,7 @@ import { definePreset } from '@primevue/themes'
 import Aura from '@primevue/themes/aura'
 
 export { default as PrimeVue } from 'primevue/config'
+export { default as ToastService } from 'primevue/toastservice'
 export const CustomAuraPreset = definePreset(Aura, {
 	primitive: {
 		blue: {

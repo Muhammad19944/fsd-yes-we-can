@@ -6,6 +6,7 @@ export interface IFormInput {
 	modelValue?: string
 	size?: Exclude<SizeType, 'normal' | 'xlarge'>
 	invalid?: boolean
+	errors?: string[]
 	variant?: VariantType
 	fluid?: boolean
 	placeholder?: string
@@ -13,4 +14,5 @@ export interface IFormInput {
 	icon?: Component
 	iconClass?: string
 	trailing?: boolean
+	name?: string
 }
